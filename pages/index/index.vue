@@ -1,8 +1,8 @@
 <template>
 	<view class="container">
-		<view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
 		<text :class="className" :style="classDemo">详见：</text>
 		<text v-if="showBoolean">{{number}}</text>
+		<image class="logo" src="/static/timg.png"></image>
 		<button type="default" :class="buttonType" @click="handleClick">{{showName}}</button>
 		<uni-link :href="href" :text="href"></uni-link>
 	</view>
@@ -31,15 +31,22 @@
 </script>
 
 <style>
+	.pages-index-index{
+		background-color: #E97352;
+	}
 	.container {
 		padding: 20px;
 		font-size: 14px;
 		line-height: 24px;
 	}
+	.logo{
+		box-shadow: 0px 31px 38px 2px rgba(100,100,100,0.38);
+	}
 	.buttonName{
 		font-weight: bold;
 		color: #ffffff;
-		background-color: #007AFF;
+		background: radial-gradient(circle, #F9CB12,#F9D213, #F85803);
+		box-shadow: 0px 2px 10px 4px rgba(100,100,100,0.5);
 	}
 	.classNames{
 		font-weight:bold;
