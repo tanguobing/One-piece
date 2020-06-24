@@ -43,14 +43,11 @@ export default {
 	/* #ifndef APP-PLUS-NVUE */
 	/*uni.css -通用组件、模板样式库*/
 	@import './common/uni.css';
-	
-	
 	.pages-index-index{
-		background-color: #E97352;
-		
+		background-color: #E97352;	
 	}
-	
 	/* #endif */
+	
 	/* #ifdef MP-360 */
 	::-webkit-scrollbar {width: 4px; height: 4px; background-color: transparent;}
 	::-webkit-scrollbar-track {background-color: transparent;}

@@ -1,9 +1,9 @@
 {
-    "name" : "hello-uniapp",
-    "appid" : "__UNI__A05B7D3",
-    "description" : "测试",
-    "versionName" : "1.0.0",
-    "versionCode" : "100",
+    "name" : "onepiece",
+    "appid" : "__UNI__AA5E203",
+    "description" : "测试1",
+    "versionName" : "1.0.1",
+    "versionCode" : 101,
     "transformPx" : false,
     "app-plus" : {
         "nvueCompiler" : "uni-app",
@@ -70,6 +70,11 @@
                         "spotlight@2x" : "unpackage/res/icons/80x80.png",
                         "spotlight@3x" : "unpackage/res/icons/120x120.png"
                     }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "E:/D/图片材料/psd/2320-1.png"
                 }
             }
         }

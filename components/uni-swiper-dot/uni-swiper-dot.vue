@@ -1,9 +1,14 @@
 <template>
 	<view class="uni-swiper__warp">
 		<slot />
-		<view v-if="mode === 'default'" :style="{'bottom':dots.bottom + 'px'}" class="uni-swiper__dots-box" key='default'>
+		<!-- <view v-if="mode === 'default'" :style="{'bottom':dots.bottom + 'px'}" class="uni-swiper__dots-box" key='default'>
 			<view v-for="(item,index) in info" :style="{
         'width': (index === current? dots.width*2:dots.width ) + 'px','height':dots.width/3 +'px' ,'background-color':index !== current?dots.backgroundColor:dots.selectedBackgroundColor,'border-radius':'0px'}" :key="index" class="uni-swiper__dots-item uni-swiper__dots-bar" />
+		</view> -->
+		<!-- 自定义 default -->
+		<view v-if="mode === 'default'" :style="{'bottom':dots.bottom + 'px'}" class="uni-swiper__dots-box" key='default'>
+			<view v-for="(item,index) in info" :style="{
+		'width': (index === current? dots.width:dots.width ) + 'px','height':dots.width/10 +'px' ,'background-color':index !== current?dots.backgroundColor:dots.selectedBackgroundColor,'border-radius':'0px'}" :key="index" class="uni-swiper__dots-item uni-swiper__dots-bar" />
 		</view>
 		<view v-if="mode === 'dot'" :style="{'bottom':dots.bottom + 'px'}" class="uni-swiper__dots-box" key='dot'>
 			<view v-for="(item,index) in info" :style="{
@@ -73,13 +78,13 @@
 		data() {
 			return {
 				dots: {
-					width: 8,
+					width: 40, //width:8
 					height: 8,
 					bottom: 10,
 					color: '#fff',
-					backgroundColor: 'rgba(0, 0, 0, .3)',
-					border: '1px rgba(0, 0, 0, .3) solid',
-					selectedBackgroundColor: '#333',
+					backgroundColor: '#f86a05',
+					border: '1px rgba(0, 0, 0, 1) solid',
+					selectedBackgroundColor: '#f9ce12',
 					selectedBorder: '1px rgba(0, 0, 0, .9) solid'
 				}
 			}
@@ -93,7 +98,7 @@
 					this.dots.width = 20
 					this.dots.height = 20
 				} else {
-					this.dots.width = 8
+					this.dots.width = 40 //width:8
 					this.dots.height = 8
 				}
 			}

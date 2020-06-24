@@ -1,14 +1,101 @@
 {
-	"pages": [{
+	"pages": [
+		{
 		"path": "pages/index/index",
 		"style": {
-			"navigationBarImg": "主界面"
+			"navigationBarTitleText": "index"
 		}
-	}]
-	/*"globalStyle": {
-		"navigationBarTextStyle": "white",
+	},
+	{
+		"path": "pages/hzwanimantion/hzwanimantion",
+		"style": {
+			"navigationBarTitleText": "hzwanimantion"
+		}
+	},
+	{
+		"path": "pages/hzwanimantion/hzwanimantionTwo",
+		"style": {
+			"navigationBarTitleText": "hzwanimantionTwo"
+		}
+	},
+	{
+		"path": "pages/hzwcomic/hzwcomic",
+		"style": {
+			"navigationBarTitleText": "hzwcomic"
+		}
+	},
+	{
+		"path": "pages/hzwcomic/hzwcomicTwo",
+		"style": {
+			"navigationBarTitleText": "hzwcomicTwo"
+		}
+	},
+	{
+		"path": "pages/hzwmusic/hzwmusic",
+		"style": {
+			"navigationBarTitleText": "hzwmusic"
+		}
+	},
+	{
+		"path": "pages/hzwmusic/hzwmusicTwo",
+		"style": {
+			"navigationBarTitleText": "hzwmusicTwo"
+		}
+	},
+	{
+		"path": "pages/hzwphoto/hzwphoto",
+		"style": {
+			"navigationBarTitleText": "hzwphoto"
+		}
+	},
+	{
+		"path": "pages/hzwphoto/hzwphotoTwo",
+		"style": {
+			"navigationBarTitleText": "hzwphotoTwo"
+		}
+	}
+	],
+	
+	"globalStyle": {
+		"app-plus":{
+			"titleNView": false //去掉导航栏设置
+		},
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#007AFF",
-		"backgroundColor": "#FF0000"
-	}*/
+		"navigationBarBackgroundColor":"#FE5786",
+		"navigationBarTextStyle":"white"  //状态栏字体颜色
+	},
+	"tabBar": {
+		"color": "#BDBDBD",
+		"selectedColor": "rgb(250,72,0)",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/footicon/Home-icon-21.png",
+				"selectedIconPath": "static/footicon/Home-icon-2.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/hzwmusic/hzwmusic",
+				"iconPath": "static/footicon/Music-icon-4.png",
+				"selectedIconPath": "static/footicon/Music-icon-3.png",
+				"text": "音乐"
+			}, {
+				"pagePath": "pages/hzwphoto/hzwphoto",
+				"iconPath": "static/footicon/Picture-icon.png",
+				"selectedIconPath": "static/footicon/Picture-icon1.png",
+				"text": "图片"
+			}, {
+				"pagePath": "pages/hzwanimantion/hzwanimantion",
+				"iconPath": "static/footicon/Triangle.png",
+				"selectedIconPath": "static/footicon/Triangle1.png",
+				"text": "视频"
+			}, {
+				"pagePath": "pages/hzwcomic/hzwcomic",
+				"iconPath": "static/footicon/Bookmark-icon-2.png",
+				"selectedIconPath": "static/footicon/Bookmark-icon-21.png",
+				"text": "漫画"
+			}
+		]
+	}
 }
