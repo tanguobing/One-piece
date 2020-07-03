@@ -1,6 +1,7 @@
 <template name="zdUniHeader">
 	<view class="header">
-		<object data="../../static/title.svg" class="svgStyle" type="image/svg+xml"></object>
+		<!-- <object data="../../static/title.svg" class="svgStyle" type="image/svg+xml"></object> -->
+		<image class="titleImage1" src="../../static/Rectangle-icon.png" mode=""></image>
 		<image class="tilteImage" src="../../static/Image-2.png"></image>
 	</view>
 </template>
@@ -28,12 +29,20 @@
 	}
 	
 	/* object svg */
-	.svgStyle{
+/* 	.svgStyle{
 		width:100%;
 		width: 106%;
 		margin: 0px -3%;
-	}
+	} */
 	/* object svg */
+	
+	/* tilteImage1 */
+	.titleImage1{
+		width:105%;
+		height:160rpx;
+		margin:0px -3%;
+	}
+	/* titleImage1 */
 	
 	/* title Image */
 	.tilteImage{

@@ -39,7 +39,15 @@
 	{
 		"path": "pages/hzwmusic/hzwmusicTwo",
 		"style": {
-			"navigationBarTitleText": "hzwmusicTwo"
+			"navigationBarTitleText": "hzwmusicTwo",
+			"enablePullDownRefresh": false,
+			"app-plus": {
+			"pullToRefresh": {
+									"support": true,
+									"color": "#FE5786", //小圈圈的颜色
+									"style": "circle" //小圈圈的样式
+							 }
+			}
 		}
 	},
 	{

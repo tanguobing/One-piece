@@ -43,9 +43,16 @@ export default {
 	/* #ifndef APP-PLUS-NVUE */
 	/*uni.css -通用组件、模板样式库*/
 	@import './common/uni.css';
-	.pages-index-index{
+	html body{
 		background-color: #E97352;	
 	}
+	/* circle */
+	.button_circle{
+		border-radius: 60rpx;
+		background: rgba(158,49,62,0.45);
+		box-shadow: 0px 10px 24px 1px rgba(158,49,62,0.27);
+	}
+	/* circle */ 
 	/* #endif */
 	
 	/* #ifdef MP-360 */
