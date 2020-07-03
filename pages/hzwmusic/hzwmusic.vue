@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<template>
-			<zdkUniHeader></zdkUniHeader>
+			<zd-uni-header :url_if="url_ifnum"></zd-uni-header>
 		</template>
 	
 	
@@ -53,6 +53,7 @@
 		},
 		data(){
 			return{
+				url_ifnum:false,
 				music_title:"One-Piece 经典曲",
 				music_title1:"One-Piece 歌曲",
 				loadMoreText: "加载中...",
