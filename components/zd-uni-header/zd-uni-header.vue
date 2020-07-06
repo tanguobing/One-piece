@@ -3,7 +3,7 @@
 		<!-- <button type="default">{{url_if}}</button> -->
 		<!-- <object data="../../static/title.svg" class="svgStyle" type="image/svg+xml"></object> -->
 		<image class="titleImage1" src="../../static/Rectangle-icon.png" mode=""></image>
-		<image class="tiltereturn" src="../../static/footicon/return.png" mode=""></image>
+		<image class="tiltereturn" src="../../static/footicon/return.png" @click="navigateBack" mode=""></image>
 		<image class="tilteImage" src="../../static/Image-2.png"></image>
 	</view>
 	<view class="header" v-else>
@@ -21,11 +21,12 @@
 			}
 		},
 		onLoad() {
-			
 			console.log(this.url_if);
 		},
 		methods:{
-			
+			navigateBack() {
+				uni.navigateBack(2);
+			}
 		}
 	}
 </script>

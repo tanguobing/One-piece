@@ -79,6 +79,11 @@
 			}
 		},
 		onLoad() {
+			let str_url = getCurrentPages();
+			let mrl = str_url[str_url.length-1];
+			// console.log(mrl.route);
+			let route_url = mrl.route;
+			console.log(route_url)
 			this.initData();
 		},
 		onUnload() {
