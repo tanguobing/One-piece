@@ -8,7 +8,9 @@
     "app-plus" : {
         "nvueCompiler" : "uni-app",
         "compilerVersion" : 3,
-        "modules" : {},
+        "modules" : {
+            "VideoPlayer" : {}
+        },
         "distribute" : {
             "android" : {
                 "permissions" : [
@@ -74,7 +76,23 @@
             },
             "splashscreen" : {
                 "android" : {
-                    "hdpi" : "E:/D/图片材料/psd/2320-1.png"
+                    "hdpi" : "D:/ps/ps插画/符文1.png",
+                    "xhdpi" : "D:/ps/ps插画/符文1.png",
+                    "xxhdpi" : "D:/ps/ps插画/符文1.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "D:/ps/ps插画/符文1.png",
+                        "landscape-896h@3x" : "D:/ps/ps插画/符文1.png",
+                        "portrait-896h@2x" : "D:/ps/ps插画/符文1.png",
+                        "landscape-896h@2x" : "D:/ps/ps插画/符文1.png",
+                        "iphonex" : "D:/ps/ps插画/符文1.png",
+                        "iphonexl" : "D:/ps/ps插画/符文1.png",
+                        "retina55" : "D:/ps/ps插画/符文1.png",
+                        "retina55l" : "D:/ps/ps插画/符文1.png",
+                        "retina47" : "D:/ps/ps插画/符文1.png",
+                        "retina47l" : "D:/ps/ps插画/符文1.png"
+                    }
                 }
             }
         }
