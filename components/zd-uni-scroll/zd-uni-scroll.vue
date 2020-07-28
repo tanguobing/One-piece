@@ -110,8 +110,4 @@
 		padding:5rpx;
 	 }
 	 /*end scroll */
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
