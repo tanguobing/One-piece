@@ -13,7 +13,11 @@
 	</view>
 	
 	<view class="music-autoside-box" scroll-x="true" scroll-left="120">
+<<<<<<< HEAD
 		<navigator url="./hzwmusicTwo" open-type="navigate" hover-class="other-navigator-hover">
+=======
+		<navigator url="./hzwmusicTwo" open-type="redirect" hover-class="other-navigator-hover">
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 		<view class="music-inside-box" v-for="(item1,index1) in musicinfo" :key="index1">
 			<view class="music-left-box">
 				<image :src="item1.musicsrc1" mode=""></image>
@@ -240,4 +244,9 @@
  }
   /*end music-autoside-box */
   
+<<<<<<< HEAD
 </style>
+=======
+</style>
+		
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded

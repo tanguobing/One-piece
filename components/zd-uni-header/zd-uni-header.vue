@@ -14,8 +14,13 @@
 
 <script>
 	export default{
+<<<<<<< HEAD
  name:"zdUniHeader",
  props:["url_if"],
+=======
+		name:"zdUniHeader",
+		props:["url_if"],
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 		data() {
 			return{
 			}
@@ -23,9 +28,15 @@
 		onLoad() {
 			console.log(this.url_if);
 		},
+<<<<<<< HEAD
  methods:{
 			navigateBack() {
 				uni.navigateBack(0);
+=======
+		methods:{
+			navigateBack() {
+				uni.navigateBack(2);
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 			}
 		}
 	}
@@ -38,10 +49,17 @@
 	}
 	
 	/* object svg */
+<<<<<<< HEAD
 /* .svgStyle{
  width:100%;
  width: 106%;
  margin: 0px -3%;
+=======
+/* 	.svgStyle{
+		width:100%;
+		width: 106%;
+		margin: 0px -3%;
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 	} */
 	/* object svg */
 	
@@ -78,4 +96,8 @@
 		display: table-cell;
 	}
 	/* tiltereturn */
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded

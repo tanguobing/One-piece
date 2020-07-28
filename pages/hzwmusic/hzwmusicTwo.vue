@@ -19,10 +19,17 @@
 							</view>
 							<view class="main_box">
 								<view class="box_left">
+<<<<<<< HEAD
 									<view class="comic_counts comic_padd">
 										{{item.comic_count}}
 									</view>
 									<view class="comic_describes comic_padd">
+=======
+									<view class="comic_counts">
+										{{item.comic_count}}
+									</view>
+									<view class="comic_describes">
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 										{{item.comic_describe}}
 									</view>
 									<view class="button_box">
@@ -42,9 +49,12 @@
 							</view>
 						</view>
 				</swiper-item>
+<<<<<<< HEAD
 				<swiper-item>
 					111
 				</swiper-item>
+=======
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 			</swiper>
 		</view>	
 
@@ -95,6 +105,16 @@
 						comic_count:"One-Piece 歌曲1",
 						comic_describe:"あなかさん3",
 						id:'03'
+<<<<<<< HEAD
+=======
+					},
+					{
+						src1:'/static/timg (2).jpg',
+						src3:'../../static/footicon/new.png',
+						comic_count:"One-Piece 歌曲2",
+						comic_describe:"あなかさん2",
+						id:'02'
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 					}],
 				tabBars_act:[
 					{
@@ -155,7 +175,11 @@
  
  /*start main_box */
  .main_box{
+<<<<<<< HEAD
 	margin:24rpx;
+=======
+	margin:24rpx 56rpx;
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
  }
  /*end main_box*/
  
@@ -164,9 +188,12 @@
 	text-align: left;
 	color:#FFFFFF;
  }
+<<<<<<< HEAD
  .box_left .comic_padd{
 	 padding-left:32rpx;
  }
+=======
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
  .box_left .comic_counts{
 	font-size: larger;
  }
@@ -189,9 +216,16 @@
 	color: #FFFFFF;
 }
 /*end top_music_word_title */
+<<<<<<< HEAD
 /*start button_box */
 .button_box{
 	margin:40rpx auto;
+=======
+
+/*start button_box */
+.button_box{
+	margin:20rpx auto;
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 	text-align: center;
 	display: flex;
 	justify-content:space-around;
@@ -209,11 +243,19 @@
 	float: left;
 }
 .button_box .button_middle{
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 }
 .button_box .button_down{
 	float: left;
 }
 /*end button_box */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
 /*start scroll-frist-title */
 .scroll-frist-title{
 	margin:12;
@@ -222,7 +264,10 @@
  .frist-title-left{
 	 float: left;
 	 line-height: 0;
+<<<<<<< HEAD
 	 margin-left: 24rpx;
+=======
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded
  }
  .frist-title-left text{
 	text-shadow: 0px 2px 4px black;
@@ -233,6 +278,7 @@
 	color: #FFFFFF;
  }
  /*end scroll-frist-title */
+<<<<<<< HEAD
  
  /*start music-autoside-box */
  .music-autoside-box{
@@ -241,3 +287,6 @@
  }
   /*end music-autoside-box */
 </style>
+=======
+</style>
+>>>>>>> 1165be1ce1a201d5cfc47929857e9b6bef222ded

@@ -1,0 +1,55 @@
+let data = [
+		{
+							src1:'../../static/timg.jpg',
+							src2:'../../static/Bookmark-icon.png',
+							src3:'../../static/footicon/new.png',
+							comic_count:"910话",
+							comic_describe:"大联盟的成立910",
+		},
+		{
+							src1:'../../static/timg.jpg',
+							src2:'../../static/Bookmark-icon.png',
+							src3:'../../static/footicon/new.png',
+							comic_count:"911话",
+							comic_describe:"大联盟的成立911",
+		},
+		{
+							src1:'../../static/timg.jpg',
+							src2:'../../static/Bookmark-icon.png',
+							src3:'../../static/footicon/new.png',
+							comic_count:"912话",
+							comic_describe:"大联盟的成立912",
+		},
+		{
+							src1:'../../static/timg.jpg',
+							src2:'../../static/Bookmark-icon.png',
+							src3:'../../static/footicon/new.png',
+							comic_count:"913话",
+							comic_describe:"大联盟的成立913",
+		},
+		{
+							src1:'../../static/timg.jpg',
+							src2:'../../static/Bookmark-icon.png',
+							src3:'../../static/footicon/new.png',
+							comic_count:"914话",
+							comic_describe:"大联盟的成立914",
+		},
+		{
+							src1:'../../static/timg.jpg',
+							src2:'../../static/Bookmark-icon.png',
+							src3:'../../static/footicon/new.png',
+							comic_count:"915话",
+							comic_describe:"大联盟的成立915",
+		},
+		{
+							src1:'../../static/timg.jpg',
+							src2:'../../static/Bookmark-icon.png',
+							src3:'../../static/footicon/new.png',
+							comic_count:"916话",
+							comic_describe:"大联盟的成立916",
+		}
+	]
+
+module.exports = {
+  data: data
+}
