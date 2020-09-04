@@ -18,7 +18,7 @@
 			<view class="music-left-box">
 				<image :src="item1.musicsrc1" mode=""></image>
 			</view>
-			<view class="music-right-l button_circle">
+			<view class="music-right-l-r button_circle">
 				<image :src="item1.musicsrc2" mode=""></image>
 			</view>
 			<view class="music-right-box">
@@ -46,10 +46,11 @@
 <script>
 	import zdkUniHeader from '../../components/zd-uni-header/zd-uni-header.vue';
 	import zdUniMusic from '../../components/zd-uni-music/zd-uni-music.vue';
+	import musicList from '@/static/json/hzwmusic.json';
 	export default{
 		components:{
 			zdkUniHeader,
-			zdUniMusic
+			zdUniMusic,
 		},
 		data(){
 			return{
@@ -113,51 +114,42 @@
 				this.max = 0;
 				this.music_info = [];
 				this.max += 5;
-				uni.request({
-							url:'../../static/json/hzwmusic.json',
-							}).then(result=>{
-							let [err,res]=result;
-							this.pagecounts = res.data.pagecount;
-							console.log(res.data.pagecount)
-							if(res.data.pagecount < 5){
-								for(let i = 0; i < this.max; i++){
-									if(res.data.contents[i] === undefined){
-										return false;
-									}else{
-										this.music_info = this.music_info.concat(res.data.contents[i]);
-										console.log(res.data.contents[i].id);
-									}
-								}
-							}else{
-								for(let i = this.max-5; i < this.max; i++){
-									this.music_info = this.music_info.concat(res.data.contents[i]);
-								}
-							}
-							})
+				let res = musicList;
+				this.pagecounts = res.pagecount;
+				console.log(res.pagecount)
+				if(res.pagecount < 5){
+					for(let i = 0; i < this.max; i++){
+						if(res.contents[i] === undefined){
+							return false;
+						}else{
+							this.music_info = this.music_info.concat(res.contents[i]);
+							console.log(res.contents[i].id);
+						}
+					}
+				}else{
+					for(let i = this.max-5; i < this.max; i++){
+						this.music_info = this.music_info.concat(res.contents[i]);
+					}
+				}
 				
 				uni.stopPullDownRefresh();
 			}, 300);
 		},
 		setListData() {
 			this.max += 5;
-			uni.request({
-				url:'../../static/json/hzwmusic.json',
-			}).then(result=>{
-			let [err,res]=result;
-				if(res.data.contents === "" || res.data.contents === undefined ){
+			let res = musicList;
+			if(res.contents === "" || res.contents === undefined ){
+				return false;
+			}
+			for(let i = this.max -5; i < this.max; i++){
+				if(res.contents[i] === undefined){
 					return false;
+				}else{
+					this.music_info = this.music_info.concat(res.contents[i]);
+					console.log(res.contents[i].id);
 				}
-				for(let i = this.max -5; i < this.max; i++){
-					if(res.data.contents[i] === undefined){
-						return false;
-					}else{
-						this.music_info = this.music_info.concat(res.data.contents[i]);
-						console.log(res.data.contents[i].id);
-					}
-						
-				}
-			});
-		}	
+			}
+		}
 		}
 	}
 </script>
@@ -213,7 +205,7 @@
  .music-right-box{
 	position: relative;
 	text-align: left;
-	margin-top: -44rpx;
+	/* margin-top: -44rpx; */
  }
  .music-r-content{
  	font-size: smaller;
@@ -223,7 +215,7 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
  }
- .music-right-l{
+.music-right-l-r{
  	text-align: right;
  	width:40rpx;
  	height:40rpx;
@@ -233,7 +225,7 @@
 	bottom: 68rpx;
 	left: 20rpx;
  }
- .music-right-l image{
+ .music-right-l-r image{
  	width:24rpx;
  	height:24rpx;
  	padding:5rpx;

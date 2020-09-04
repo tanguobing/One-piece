@@ -12,6 +12,9 @@ export default {
 		        imei: plus.device.imei
 		    },
 		    success: (res) => {
+				console.log(res)
+				console.log(plus.os)
+				console.log(res.data)
 		        if (res.statusCode == 200 && res.data.isUpdate) {
 		            let openUrl = plus.os.name === 'iOS' ? res.data.iOS : res.data.Android;
 		            // 提醒用户更新
